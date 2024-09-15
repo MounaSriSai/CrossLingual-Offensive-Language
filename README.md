@@ -27,19 +27,25 @@ This project aims to detect offensive language across different languages, speci
 
 ## Usage
 1. **Data Preprocessing**:
-   - The project first cleans and processes Arabic and English text.
+   - Open the Jupyter Notebook for preprocessing the Arabic and English datasets.
+   - You can use the following command to start Jupyter Notebook:
+   - ``` bash
+     jupyter notebook
+     ```
+   - In the notebook interface, run the cells in the respective notebooks for Arabic and English preprocessing.
    - Stopwords are removed, and text is converted to a suitable format for classification.
    - The processed datasets are saved as `processedArabic.csv` and `processedEnglish.csv`.
 
 2. **Training and Testing**:
-   - Run the script to train models on the Arabic dataset and test on the English dataset, or vice versa:
-   ```bash
-   python cross_lingual_detection.py
-   ```
+   - Once the data is preprocessed, open the training and testing notebook in Jupyter:
+   - Run the cells to train models and test them on cross-lingual data.
+   - The models include classifiers like Decision Trees, Random Forest, AdaBoost, and Gradient Boosting.
    - You can modify the code to use different classifiers like Decision Trees, AdaBoost, or Random Forest.
 
 ## Project Structure
-- `cross_lingual_detection.py`: Main script for cross-lingual classification.
+- `Training using Arabic & Testing using English.ipynb`: Script for training of arabic and testing with english.
+- `Training using English & Testing using Arabic.ipynb`: Script for training of english and testing with arabic.
+- `Arabic and English Language Process.ipynb`: Data Preprocessing
 - `L-HSAB.txt`: Arabic language dataset.
 - `labeled_data.csv`: English language dataset.
 - `processedArabic.csv`: Preprocessed Arabic dataset.
